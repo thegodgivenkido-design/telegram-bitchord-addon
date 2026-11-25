@@ -203,10 +203,7 @@ app.get("/stream/:id", (req, res) => {
 
   res.json({
   url,
-  format: "audio",
-  codec: "unknown",
-  encrypted: false,
-  manifest: "none"
+  encrypted: false
 });
 });
 
