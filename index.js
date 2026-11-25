@@ -44,7 +44,6 @@ const manifest = {
   name: "Telegram Music Library",
   version: "1.0.0",
   resources: ["search", "stream"],
-  bitchordAuth: false,
   allowDownloads: 0
 };
 
