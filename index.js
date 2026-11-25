@@ -304,4 +304,9 @@ try {
 } catch (error) {
   console.error("Telegram connection failed:", error.message);
   process.exit(1);
-        }
+}
+
+process.on("SIGINT", async () => {
+  await client.disconnect();
+  process.exit(0);
+});
