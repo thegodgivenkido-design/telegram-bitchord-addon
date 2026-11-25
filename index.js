@@ -202,10 +202,12 @@ app.get("/stream/:id", (req, res) => {
     `?expires=${expires}&sig=${signature}`;
 
   res.json({
-    url,
-    format: "audio",
-    encrypted: false
-  });
+  url,
+  format: "audio",
+  codec: "unknown",
+  encrypted: false,
+  manifest: "none"
+});
 });
 
 app.get("/audio/:id", async (req, res) => {
