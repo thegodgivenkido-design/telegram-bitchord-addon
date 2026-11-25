@@ -1,1 +1,20 @@
 
+{
+  "name": "telegram-bitchord-addon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "login": "node login.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "telegram": "^2.26.22"
+  }
+}
+
